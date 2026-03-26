@@ -3210,6 +3210,27 @@
 		)
 		(uuid "3d9703e4-0afa-45bf-8b28-163483095cde")
 	)
+	(text "The board is meant to be operated with one analogue sensor, \nas we primary use the WIKA pressure sensors, \nthe standard configuration is without the PT-x resistor bridge. "
+		(exclude_from_sim no)
+		(at 30.988 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "43b31779-5df7-455c-a0e3-0cb1fa54ec3c")
+	)
+	(text "=> sollte das board mit Pt-x widerständen genutzt werden sollen, so muss die Widerstandsbrücke ergänzt werden."
+		(exclude_from_sim no)
+		(at 87.884 200.914 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6c979b0a-e4a6-4ad8-b1e1-d30f581eebe6")
+	)
 	(text "TODO: add esd component, check viability"
 		(exclude_from_sim no)
 		(at 58.674 120.396 0)
@@ -3372,6 +3393,16 @@
 			)
 		)
 		(uuid "e6155de8-2797-4c66-ad26-00f1f7e57aad")
+	)
+	(text "=> RG1 to be set according to sensor"
+		(exclude_from_sim no)
+		(at 162.56 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fd01722c-ea0a-437d-94e2-0fa41f0e790f")
 	)
 	(junction
 		(at 62.23 102.87)
@@ -6672,7 +6703,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESD5Zxx"
+		(property "Value" "ESD5Z36"
 			(at 64.008 78.232 90)
 			(effects
 				(font
@@ -6691,7 +6722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48935658.pdf"
 			(at 67.31 67.31 0)
 			(effects
 				(font
@@ -6702,6 +6733,15 @@
 		)
 		(property "Description" "ESD Protection Diode, SOD-523"
 			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C48935658"
+			(at 67.31 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8106,76 +8146,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:ESD5Zxx")
-		(at 62.23 109.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3eff40f5-5284-4ba5-891e-080e825c3458")
-		(property "Reference" "D2"
-			(at 64.262 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESD5Zxx"
-			(at 64.77 110.4899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 57.785 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf"
-			(at 62.23 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD Protection Diode, SOD-523"
-			(at 62.23 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e92c519f-8271-4def-8b4f-39f1962f94f3")
-		)
-		(pin "1"
-			(uuid "9319e29c-6ac7-4b65-a191-81a6c1da94ab")
-		)
-		(instances
-			(project "frodo_amplifier_module"
-				(path "/61190ca3-2171-4daf-b151-7360302be40b"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 237.49 85.09 180)
 		(unit 1)
@@ -8986,76 +8956,6 @@
 			(project "frodo_amplifier_module"
 				(path "/61190ca3-2171-4daf-b151-7360302be40b"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD5Zxx")
-		(at 55.88 109.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e095a6f-7d11-4507-af14-9a786f2addbe")
-		(property "Reference" "D3"
-			(at 57.404 109.728 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESD5Zxx"
-			(at 52.578 120.142 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 51.435 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf"
-			(at 55.88 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD Protection Diode, SOD-523"
-			(at 55.88 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "caa547a9-d680-403e-b034-b494b4f24a48")
-		)
-		(pin "1"
-			(uuid "69d0c5f6-c6e4-47ee-b059-b32a24eb642e")
-		)
-		(instances
-			(project "frodo_amplifier_module"
-				(path "/61190ca3-2171-4daf-b151-7360302be40b"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9976,6 +9876,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:ESD5Zxx")
+		(at 62.23 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95370a7b-0a90-4038-967d-8eecb0586521")
+		(property "Reference" "D3"
+			(at 62.484 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESD5Z36"
+			(at 58.928 120.142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 57.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48935658.pdf"
+			(at 62.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Protection Diode, SOD-523"
+			(at 62.23 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C48935658"
+			(at 62.23 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11422e61-1e55-442b-b7ed-b6ce5ec23224")
+		)
+		(pin "1"
+			(uuid "bb7cce06-ed6b-4f74-9ba6-bcd57969f7dd")
+		)
+		(instances
+			(project "frodo_amplifier_module"
+				(path "/61190ca3-2171-4daf-b151-7360302be40b"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 223.52 161.29 0)
 		(unit 1)
@@ -10283,76 +10262,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:ESD5Zxx")
-		(at 71.12 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f5114c6-77b5-49c1-a2c6-6f37ca4b1769")
-		(property "Reference" "D8"
-			(at 71.374 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESD5Zxx"
-			(at 67.818 78.232 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 66.675 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf"
-			(at 71.12 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD Protection Diode, SOD-523"
-			(at 71.12 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4df32cce-d990-418e-bc14-8bd49024cb71")
-		)
-		(pin "1"
-			(uuid "09f6f5d0-c7f3-44d8-800d-8869ca7ef751")
-		)
-		(instances
-			(project "frodo_amplifier_module"
-				(path "/61190ca3-2171-4daf-b151-7360302be40b"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 240.03 96.52 180)
 		(unit 1)
@@ -10417,6 +10326,164 @@
 			(project "frodo_amplifier_module"
 				(path "/61190ca3-2171-4daf-b151-7360302be40b"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:ESD5Zxx")
+		(at 55.88 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a92aa7e2-e968-4d3a-b43c-f0e3b57957ba")
+		(property "Reference" "D2"
+			(at 56.134 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESD5Z36"
+			(at 52.578 120.142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 51.435 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48935658.pdf"
+			(at 55.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Protection Diode, SOD-523"
+			(at 55.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C48935658"
+			(at 55.88 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d66b644c-26a4-4547-b4dd-815730a4796c")
+		)
+		(pin "1"
+			(uuid "0e1f60fe-cf04-4ed7-ad54-72b73c2f6101")
+		)
+		(instances
+			(project "frodo_amplifier_module"
+				(path "/61190ca3-2171-4daf-b151-7360302be40b"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:ESD5Zxx")
+		(at 71.12 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad00e33f-cb18-4583-8117-c44510eb1309")
+		(property "Reference" "D8"
+			(at 71.374 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESD5Z36"
+			(at 67.818 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 66.675 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48935658.pdf"
+			(at 71.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Protection Diode, SOD-523"
+			(at 71.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C48935658"
+			(at 71.12 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67474473-db69-421f-bf68-d93ce37f27d9")
+		)
+		(pin "1"
+			(uuid "b5b55172-e9d9-4002-9ae3-b4e7ddfe7f85")
+		)
+		(instances
+			(project "frodo_amplifier_module"
+				(path "/61190ca3-2171-4daf-b151-7360302be40b"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -11016,7 +11083,7 @@
 		(dnp no)
 		(uuid "c7034d28-5f41-4eaf-94ee-848cf032664e")
 		(property "Reference" "RG1"
-			(at 153.67 57.15 0)
+			(at 153.162 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11025,7 +11092,7 @@
 			)
 		)
 		(property "Value" "tbd"
-			(at 153.67 59.69 0)
+			(at 153.162 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11318,7 +11385,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WT"
+		(property "Value" "1SS424"
 			(at 66.04 49.53 0)
 			(effects
 				(font
@@ -11335,7 +11402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C6657698.pdf"
 			(at 66.04 53.34 0)
 			(effects
 				(font
@@ -11344,7 +11411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+		(property "Description" "Diode 20V 200mA Surface Mount SC-79(SOD-523)"
 			(at 66.04 53.34 0)
 			(effects
 				(font
@@ -11353,16 +11420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "D"
-			(at 66.04 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "LCSC" "C6657698"
 			(at 66.04 53.34 0)
 			(effects
 				(font
