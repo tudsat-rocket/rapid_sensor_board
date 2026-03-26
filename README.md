@@ -1,4 +1,4 @@
-# FRoDo Amplifier Module
+# Rapid Sensor Board
 this module is meant to be a general-purpose amplifier which is going to be used for all analogue sensors which will be in the rocket, those include the WIKA pressure sensors as well as the fancy-fins strain gauges.
 
 ## Description
